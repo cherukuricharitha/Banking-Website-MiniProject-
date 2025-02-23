@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color:mediumturquoise;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .payment-option {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .payment-option h3 {
+            margin-top: 0;
+        }
+        .payment-option p {
+            margin-bottom: 10px;
+        }
+        .payment-option img {
+            max-width: 300px;
+            height:250px;
+            margin-bottom:10px;
+        }
+        .action-button {
+            background-color: #ff1500;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .action-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Payment Options</h2>
+        
+        <div class="payment-option">
+            <h3>Money Transfer</h3>
+            <img src="D:\WT\PROJECT\moneytransfer.jpg" alt="Money Transfer">
+            <p>Transfer money to another account.</p>
+            <button class="action-button" onclick="navigateTo('money_transfer.html')">Transfer Now</button>
+        </div>
+        
+        <div class="payment-option">
+            <h3>Card Payments</h3>
+            <img src="D:\WT\PROJECT\creditcard.jpg" alt="Card Payments" >
+            <p>Pay with your debit or credit card.</p>
+            <button class="action-button" onclick="navigateTo('payment.html')">Pay Now</button>
+        </div>
+        
+        <div class="payment-option">
+            <h3>Bill Payments</h3>
+            <img src="D:\WT\PROJECT\billpayments.jpg" alt="Bill Payments">
+            <p>Pay your bills online.</p>
+            <button class="action-button" onclick="navigateTo('payment.html')">Pay Now</button>
+        </div>
+        <a href="main.html">&lt;</a>
+        
+        
+    </div>
+
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+    
+</body>
+</html>
