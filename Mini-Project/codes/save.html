@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Money Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color:mediumturquoise;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .saving-option {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .saving-option h3 {
+            margin-top: 0;
+        }
+        .saving-option p {
+            margin-bottom: 10px;
+        }
+        .saving-option img {
+            max-width: 300px;
+            height:250px;
+            margin-bottom: 10px;
+        }
+        .action-button {
+            background-color: #ff00f2;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .action-button:hover {
+            background-color: #d102f6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Save Money Options</h2>
+        
+        <div class="saving-option">
+            <h3>Savings Account</h3>
+            <img src="D:\WT\PROJECT\savingaccount.jpg" alt="High-Yield Savings Account">
+            <p>Earn higher interest rates on your savings with a high-yield savings account.</p>
+            <button class="action-button" onclick="navigateTo('openaccount.html')">Open Account</button>
+        </div>
+        
+        <div class="saving-option">
+            <h3>Fixed Deposit</h3>
+            <img src="D:\WT\PROJECT\fixeddeposit.jpg" alt="Certificate of Deposit (CD)">
+            <p>Lock in a fixed interest rate for a specific period of time with a certificate of deposit.</p>
+            <button class="action-button" onclick="navigateTo('payment.html')">Deposit</button>
+        </div>
+        
+        <div class="saving-option">
+            <h3>Money Market Account</h3>
+            <img src="D:\WT\PROJECT\moneymarketaccount.jpg" alt="Money Market Account">
+            <p>Access your funds easily while earning a competitive interest rate with a money market account.</p>
+            <button class="action-button" onclick="navigateTo('openaccount.html')">Open Account</button>
+        </div>
+        <a href="main.html">&lt;</a>
+    </div>
+
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
